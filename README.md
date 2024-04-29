@@ -29,3 +29,17 @@ php artisan make:controller NoteController
 ## for work smarter, we add layout page into the blade folder, instead of adding manually each file into the folder
 
 ## I had a problem with running vite cofiguration on my project, then i run the npm install once again and everything fixed.
+
+## always before we migrate the sql file, we should put into the appserviceprovider.php => 
+Schema::defaultStringLength(191);
+
+## Inertia: is not a framework, it is a glue that stick the frontend into the backend => in this project will be use to connect laravel into the react project
+
+## Learn about JSX File
+
+## Learn about tinker
+    \App\Models\Task::query()->paginate(5)->all()
+
+## Start to make Controller
+
+php artisan route:list
